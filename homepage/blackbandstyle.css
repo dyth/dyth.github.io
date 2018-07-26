@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "Computer Modern Bright";
+    src: url('cmunbmr.ttf');
+}
+
+body {
+	margin: 0;
+	padding: 75px 0 0 0;
+}
+
+a:link {
+	color: #009;
+    text-decoration: none;
+}
+a:visited {
+	color: #009;
+    text-decoration: none;
+}
+a:hover {
+	color: #000;
+    text-decoration: none;
+}
+
+
+#content {
+    width: 80%;
+	height: 100%;
+	padding: 0% 10% 5% 10%;
+    overflow: hidden;
+	min-height: calc(100vh - 75px)
+}
+
+#content1 {
+    width: 80%;
+	height: 100%;
+	padding: 0% 10% 5% 10%;
+	background-color:#F8F8F8;
+    overflow: hidden;
+	min-height: calc(100vh - 75px)
+}
+
+#contentlast {
+    width: 80%;
+	height: 100%;
+	padding: 0% 10% 0% 10%;
+	background-color: white;
+    overflow: hidden;
+	min-height: calc(100vh - 130px)
+}
+
+
+footer {
+    overflow: hidden;
+    background-color: #F8F8F8;
+	text-align: center;
+}
+
+
+h1 {
+    font-family: "Computer Modern Bright", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 68px;
+}
+h2 {
+    font-family: "Computer Modern Bright", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 42px;
+}
+p {
+    font-family: "Computer Modern Bright", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: justify;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}
+
+
+ul.topnav {
+	display: none;
+	width: 80%;
+	position: fixed;
+	top: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0px 10% 0px 10%;
+	overflow: hidden;
+	background-color: #000;
+}
+ul.topnav li {
+	font-family: "Computer Modern Bright", sans-serif;
+	float: right;
+	font-size: 18px;
+	line-height: 75px;
+}
+ul.topnav li a {
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 0 22.5px 0 22.5px;
+}
+ul.topnav li a:hover {
+	background-color: #333;
+	padding: 100% 22.5px 100% 22.5px;
+}
+
+ul.topnav li.left {
+	float: left;
+	padding: 0 22.5px 0 0;
+}
+ul.topnav li.left a {
+	float: left;
+	padding: 0 22.5px 0 0;
+}
+ul.topnav li.left a:hover {
+	float: left;
+	padding: 0 22.5px 0 0;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 810px) {
+    ul.topnav li.left, 
+    ul.topnav li {float: none;}
+
+	#content {
+		width: 90%;
+		padding: 0% 5% 0% 5%;
+	}
+	#content1 {
+		width: 90%;
+		padding: 0% 5% 0% 5%;
+	}
+	#contentlast {
+		width: 90%;
+		padding: 0% 5% 0% 5%;
+	}
+	ul.topnav li {
+		display: none;
+	}
+}
+
