@@ -1,0 +1,20 @@
+.left {
+  position: fixed;
+  display: none;
+  padding-top: 14.6vh;
+}
+
+.left > .image {
+  width: 23.2vw;
+  height: 23.2vw;
+  max-width: 70.8vh;
+  max-height: 70.8vh;
+  padding-left: 14.6vw;
+}
+
+.content {
+  min-height: 100vh;
+  padding-top: 14.6vh;
+  padding-left: 38.6vw;
+  padding-right: 14.6vw;
+}
