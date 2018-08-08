@@ -3,58 +3,47 @@
     src: url('cmunbmr.ttf');
 }
 
-body {
-	margin: 0;
+.left {
+  position: fixed;
+  display: none;
+  padding-top: 14.6vh;
 }
 
-a:link {
-	color: #009;
-    text-decoration: none;
-}
-a:visited {
-	color: #009;
-    text-decoration: none;
-}
-a:hover {
-	color: #000;
-    text-decoration: none;
+.left > .image {
+  width: 20.6vw;
+  max-height: 70.8vh;
+  padding-left: 14.6vw;
 }
 
-ul.topnav {
-	font-family: "Computer Modern Bright", sans-serif;
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    font-size: 20px;
+.content {
+  min-height: 61.8vh;
+  padding-top: 14.6vh;
+  padding-left: 38.2vw;
+  padding-right: 14.6vw;
+  padding-bottom: 14.6vh;
 }
 
-ul.mobile {
-	display: none;
-}
-
-ul.topnav li {
-    float: right;
-}
-
-ul.topnav li a {
-    display: block;
-    text-align: center;
-    padding: 55px 0 0 55px;
-}
-
-
-
-h1 {
+h0 {
     font-family: "Computer Modern Bright", sans-serif;
-    font-size: 47px;
+    font-size: 100px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 76px;
+    line-height: 100px;
 }
+
+h1 {
+    font-family: "Computer Modern Bright", sans-serif;
+    font-size: 78px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 125px;
+}
+
 h2 {
     font-family: "Computer Modern Bright", sans-serif;
-    font-size: 29px;
+    font-size: 47px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -63,98 +52,13 @@ h2 {
 
 p {
     font-family: "Computer Modern Bright", sans-serif;
-    font-size: 18px;
+    font-size: 29px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 29px;
+    line-height: 47px;
     text-align: justify;
     -webkit-hyphens: none;
     -moz-hyphens: none;
     hyphens: none;
 }
-
-
-#title {
-    width: 80%;
-	padding-top: 29px;
-	padding-left: 10%;
-	background-color: white;
-    overflow: hidden;
-	min-height: 100vh;
-}
-
-#content {
-    width: 80%;
-	padding: 0 10%;
-	background-color: white;
-    overflow: hidden;
-	min-height: 100vh;
-}
-
-#contenteven {
-    width: 80%;
-	padding: 0 10%;
-	background-color: #F0F0F0;
-    overflow: hidden;
-	min-height: 100vh;
-}
-
-footer {
-    overflow: hidden;
-    background-color: #F0F0F0;
-	text-align: center;
-}
-
-
-
-
-
-@media screen and (max-width: 870px) {
-	ul.topnav li a{
-		display: none;
-	}
-
-	#title {
-		width: 90%;
-		padding-top: 0;
-		padding-left: 5%;
-	}
-	
-	#content {
-		width: 90%;
-		padding: 0 5%;
-	}
-
-	#contenteven {
-		width: 90%;
-		padding: 0 5%;
-	}
-
-	ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-	
-	ul.mobile {
-		display: unset;
-		font-family: "Computer Modern Bright", sans-serif;
-		list-style-type: none;
-		padding: 0;
-		overflow: hidden;
-		font-size: 20px;
-		display: flex;
-		justify-content: space-between;
-	}
-	ul.mobile li {
-		float: right;
-	}
-
-	ul.mobile li a {
-		display: block;
-		text-align: center;
-		padding: 10px 0;
-	}
-}
-
