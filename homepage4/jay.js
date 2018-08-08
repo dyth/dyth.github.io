@@ -1,3 +1,4 @@
+<!--
 var screen_height = $(window).height();
 var activation_offset = 0.5;
 var element_position1 = $('#right2').offset().top;
@@ -34,3 +35,4 @@ function hideAll(exceptMe) {
 		$(this).fadeOut();
 	});
 }
+//-->
