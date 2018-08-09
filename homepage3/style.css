@@ -23,42 +23,46 @@
   padding-bottom: 14.6vh;
 }
 
-h0 {
-    font-family: "Computer Modern Bright", sans-serif;
-    font-size: 100px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 100px;
-}
-
 h1 {
     font-family: "Computer Modern Bright", sans-serif;
-    font-size: 78px;
+    font-size: 5vw;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 125px;
+    line-height: 8.1vw;
 }
 
 h2 {
     font-family: "Computer Modern Bright", sans-serif;
-    font-size: 47px;
+    font-size: 3.1vw;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 47px;
+    line-height: 5vw;
+}
+
+h3 {
+    font-family: "Computer Modern Bright", sans-serif;
+    font-size: 3.1vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 5vw;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
 }
 
 p {
     font-family: "Computer Modern Bright", sans-serif;
-    font-size: 29px;
+    font-size: 1.9vw;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 47px;
+    line-height: 3.1vw;
     text-align: justify;
     -webkit-hyphens: none;
     -moz-hyphens: none;
     hyphens: none;
+	color: gray;
 }
