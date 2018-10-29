@@ -6,7 +6,7 @@ article, aside, canvas, details, figure, figcaption, footer, header, hgroup,
 menu, nav, output, section, time {
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
+	vertical-align:top;
 }
 
 @font-face {
@@ -32,6 +32,7 @@ menu, nav, output, section, time {
 	padding-left: 38.2vw;
 	padding-right: 14.6vw;
 	padding-bottom: 14.6vh;
+    overflow: hidden;
 }
 
 h1 {
@@ -82,4 +83,6 @@ div {
 	margin: auto;
     padding: auto;
     border: auto;
+	vertical-align:top;
+    overflow: hidden;
 }
