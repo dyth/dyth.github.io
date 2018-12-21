@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 
 	<head>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<style>
          img {
 			 float:left;
@@ -131,6 +133,7 @@
 			 var row = table.insertRow(-1);
 			 var cell1 = row.insertCell(0);
 			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>In my spare time I enjoy <b onclick='music()'>music</b>, fine art, <b onclick='literature()'>literature</b>, photography, swimming and football. I've yet to find something I don't like, apart from a general sense of koyaanisqatsi.</li>";
+			 scrollSmoothToBottom();
 		 }
 		</script>
 
@@ -149,6 +152,7 @@
 			 var row = table.insertRow(-1);
 			 var cell1 = row.insertCell(0);
 			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Clearly, everything in philosophy can be solved by adding another layer of misdirection.</li>";
+			 scrollSmoothToBottom();
 		 }
 		</script>
 
@@ -161,6 +165,7 @@
 			 var row = table.insertRow(-1);
 			 var cell1 = row.insertCell(0);
 			 cell1.innerHTML = "<img src='profile.png'><li class='him only'>Exquisitely wonderful. I spent three delightful years at Trinity College, where I participated in orchestras, hackathons and coding challenges. In <b onclick='first()'>first year</b>, I studied Physics and Mathematics alongside Computer Science. During my <b onclick='second()'>second year</b>, I won a Trinity College Science Essay Prize. Finally, I graduated with a 2:1 after my <b onclick='third()'>third year</b>, where I investigated Deep Reinforcement Learning for Chess in my dissertation.</li>";
+			 scrollSmoothToBottom();
 		 }
 		</script>
 
@@ -173,6 +178,7 @@
 			 var row = table.insertRow(-1);
 			 var cell1 = row.insertCell(0);
 			 cell1.innerHTML = "<img src='profile.png'><li class='him only'>I participated in eth1, Jane Street's automated trading markets hackathon, where my team came third.</li>";
+			 scrollSmoothToBottom();
 		 }
 		</script>
 
@@ -194,6 +200,7 @@
 			 var row = table.insertRow(-1);
 			 var cell1 = row.insertCell(0);
 			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>I don't usually dress like that, as the picture on the left can attest.</li>";
+			 scrollSmoothToBottom();
 		 }
 		</script>
 
@@ -206,6 +213,7 @@
 			 var row = table.insertRow(-1);
 			 var cell1 = row.insertCell(0);
 			 cell1.innerHTML = "<img src='profile.png'><li class='him only'>The thing I enjoyed most was the opportunity to investigate a topic in my dissertation. My topic was 'Deep Reinforcement Learning for Chess', supervised by Dr. Sean Holden. I trained a chess agent written in Python, C++, Keras and PyTorch using self-play to win > 95 % of games against an opponent playing random moves. Algorithms such as TreeStrap, TD-Leaf and TD-Lambda were implemented.</li>";
+			 scrollSmoothToBottom();
 		 }
 		</script>
 
@@ -224,6 +232,7 @@
 			 var row = table.insertRow(-1);
 			 var cell1 = row.insertCell(0);
 			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>I've also worked from both top-down and bottom-up paradigms. At <b onclick='facebook()'>Facebook</b>, I interned as a Data Scientist, where I investigated user-behaviour from a bottom up perspective in order to design a new metric for advertiser quality. Contrastingly, at <b onclick='tractable()'>Tractable</b>, I worked from a top-down perspective, where I improved model performance by identifying the largest source of error and eliminating them first.</li>";
+			 scrollSmoothToBottom();
 		 }
 		</script>
 
@@ -239,6 +248,7 @@
 			 var row = table.insertRow(-1);
 			 var cell1 = row.insertCell(0);
 			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>This culminated in the invention of a video-morphing transformation enabling an analyst to keep an object in focus between two video streams, using OpenCV and scikit-learn. This transform was incorporated within Boeing's analysis stack after many long nights liaising with a software-development team at their Bristol offices.</li>";
+			 scrollSmoothToBottom();
 		 }
 		</script>
 
@@ -257,6 +267,7 @@
 			 var row = table.insertRow(-1);
 			 var cell1 = row.insertCell(0);
 			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Finally, I presented my findings to managers, data engineers and other data scientists in an hour-long session.</li>";
+			 scrollSmoothToBottom();
 		 }
 		</script>
 
@@ -281,6 +292,7 @@
 			 var row = table.insertRow(-1);
 			 var cell1 = row.insertCell(0);
 			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Finally, I helped upgrade Tractable's codebase to TensorFlow 1.11 from Keras 1.2.2.. I converted a ResNet-37 implementation to use the new library, checking that all the layers, connections and weights were loaded correctly.</li>";
+			 scrollSmoothToBottom();
 		 }
 		</script>
 
@@ -299,6 +311,7 @@
 			 var row = table.insertRow(-1);
 			 var cell1 = row.insertCell(0);
 			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Strauss' opera Der Rosenkavalier will always have a special place in my heart, as it was the composition I was listening to when I first learned about and trained a neural network.</li>";
+			 scrollSmoothToBottom();
 		 }
 		</script>
 
@@ -314,6 +327,16 @@
 			 var row = table.insertRow(-1);
 			 var cell1 = row.insertCell(0);
 			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>I've anonymously published several short stories online, which is left as a challenge for you to find. Most of them happen to be about AI and postmodernism (ironically).</li>";
+			 scrollSmoothToBottom();
+		 }
+		</script>
+
+		<script>
+		 scrollingElement = (document.scrollingElement || document.body)
+		 function scrollSmoothToBottom (id) {
+			 $(scrollingElement).animate({
+				 scrollTop: document.body.scrollHeight
+			 }, 500);
 		 }
 		</script>
 
