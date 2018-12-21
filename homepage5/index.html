@@ -108,7 +108,7 @@
   				<td><img src="blank.png"><li class="him">This is my attempt at uploading my consciousness to the internet. As we are experiencing some technical difficulties, responses may differ. Also, the number of questions you can ask are severely limited, and restricted to English. Nevertheless, feel free to ask to your heart's content by <u onclick="intro()">clicking on links like these</u>.</li></td>
 			</tr>
 			<tr>
-  				<td><img src="blank.png"><li class="him">If you're <u onclick="animal()"> absolutely</u> <u onclick="dream()"> desperate</u> <u onclick="three()"> to</u> talk to the real me -- via the internet, ofc -- do reach out on <a href='https://www.linkedin.com/in/dythui/' target='_blank'>LinkedIn</a>, <a href='https://github.com/dyth' target='_blank'>GitHub</a> or <a href='https://medium.com/@dyth' target='_blank'>Medium</a>.</li></td>
+  				<td><img src="blank.png"><li class="him">If you're <u onclick="animal()"> absolutely</u> <u onclick="dream()"> desperate</u> <u onclick="three()"> to</u> <u onclick="weaknesses()"> talk</u> to the real me -- via the internet, ofc -- do reach out on <a href='https://www.linkedin.com/in/dythui/' target='_blank'>LinkedIn</a>, <a href='https://github.com/dyth' target='_blank'>GitHub</a> or <a href='https://medium.com/@dyth' target='_blank'>Medium</a>.</li></td>
 			</tr>
 			<tr>
   				<td><img src="profile.png"><li class="him end">Thanks so much for visiting.</li></td>
@@ -162,6 +162,40 @@
 			</script>
 
 			<script>
+			 function weaknesses() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li id='intro' class='me only'>What are your biggest weaknesses?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Oh, I have so many. But if I had to pick just one to talk about.</u>.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>Ok -- could I pick two?</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>I would say that my tendency to tell uninterpretable jokes is a weakness.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>However, I'm aware of this weakness and trying to improve it day by day.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>I think another weakness is that I'm only 176 cm (5'7 for you imperialists).</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him end'>I'm quite aware of this weakness and I would say that I'm trying to improve it day by day, but I'm not too sure whether I'm succeeding.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>In all seriousness, I believe my largest weakness as an aspiring researcher is my current lack of publications in my chosen field.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Which is why my next internship (<a href='https://mila.quebec' target='_blank'>MILA</a>, starting January 9) will be at an academic research laboratory.</li>";
+			 }
+			</script>
+
+			<script>
 			 function intro() {
 				 var table = document.getElementById("myTable");
 				 var row = table.insertRow(-1);
@@ -170,7 +204,7 @@
 				 scrollSmoothToBottom();
 				 var row = table.insertRow(-1);
 				 var cell1 = row.insertCell(0);
-				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I'm an aspiring AI researcher in the field of <u onclick='research()'>language acquisition</u>.";// currently working with <a href='http://www.iro.umontreal.ca/~bengioy/yoshua_en/' target='_blank'>Yoshua Bengio</a> at <a href='https://mila.quebec' target='_blank'>MILA</a>.</li>";
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I'm an aspiring AI researcher in the field of <u onclick='research()'>language acquisition</u>.</li>";// currently working with <a href='http://www.iro.umontreal.ca/~bengioy/yoshua_en/' target='_blank'>Yoshua Bengio</a> at <a href='https://mila.quebec' target='_blank'>MILA</a>.</li>";
 				 var row = table.insertRow(-1);
 				 var cell1 = row.insertCell(0);
 				 cell1.innerHTML = "<img src='blank.png'><li class='him'>Prior to that, I was an <u onclick='undergraduate()'>undergraduate</u> at <a href='https://www.trin.cam.ac.uk' target='_blank'>Trinity College, Cambridge</a> studying <a href='https://www.cl.cam.ac.uk' target='_blank'>Computer Science</a>.</li>";
