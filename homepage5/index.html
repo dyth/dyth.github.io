@@ -105,241 +105,292 @@
   				<td><img src="blank.png"><li class="him">My name is David Yu-Tung Hui, 許宇同. You can call me David, Yu-Tung or 宇同 if you prefer.</li></td>
 			</tr>
 			<tr>
-  				<td><img src="blank.png"><li class="him">This is my attempt at uploading my consciousness to the internet. As we are experiencing some technical difficulties, responses may differ. Also, the number of questions you can ask are severely limited, and restricted to English. Nevertheless, feel free to ask anything you want by <b onclick="intro()">clicking on the words in bold</b>.</li></td>
+  				<td><img src="blank.png"><li class="him">This is my attempt at uploading my consciousness to the internet. As we are experiencing some technical difficulties, responses may differ. Also, the number of questions you can ask are severely limited, and restricted to English. Nevertheless, feel free to ask to your heart's content by <u onclick="intro()">clicking on links like these</u>.</li></td>
 			</tr>
 			<tr>
-  				<td><img src="blank.png"><li class="him">If you're absolutely desperate to talk to the real me -- via the internet, ofc -- do reach out on <a href='https://www.linkedin.com/in/dythui/' target='_blank'>LinkedIn</a>, <a href='https://github.com/dyth' target='_blank'>GitHub</a> or <a href='https://medium.com/@dyth' target='_blank'>Medium</a>.</li></td>
+  				<td><img src="blank.png"><li class="him">If you're <u onclick="animal()"> absolutely</u> <u onclick="dream()"> desperate</u> <u onclick="three()"> to</u> talk to the real me -- via the internet, ofc -- do reach out on <a href='https://www.linkedin.com/in/dythui/' target='_blank'>LinkedIn</a>, <a href='https://github.com/dyth' target='_blank'>GitHub</a> or <a href='https://medium.com/@dyth' target='_blank'>Medium</a>.</li></td>
 			</tr>
 			<tr>
   				<td><img src="profile.png"><li class="him end">Thanks so much for visiting.</li></td>
 			</tr>
 		</table> 
-		<br>
+		<ur>
 
-		<script>
-		 function intro() {
-			 var table = document.getElementById("myTable");
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<li id='intro' class='me only'>What do you do?</li>";
-			 scrollSmoothToBottom();
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I'm an aspiring AI researcher in the field of <b onclick='research()'>language acquisition</b>, currently working with <a href='http://www.iro.umontreal.ca/~bengioy/yoshua_en/' target='_blank'>Yoshua Bengio</a> at <a href='https://mila.quebec' target='_blank'>MILA</a>.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him'>Prior to that, I was an <b onclick='undergraduate()'>undergraduate</b> at <a href='https://www.trin.cam.ac.uk' target='_blank'>Trinity College, Cambridge</a> studying <a href='https://www.cl.cam.ac.uk' target='_blank'>Computer Science</a>.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him'>I have also been fortunate enough to <b onclick='intern()'>intern</b> at the <b onclick='boeing()'>University of Cambridge</b>, <b onclick='facebook()'>Facebook</b> and <b onclick='tractable()'>Tractable</b>.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>In my spare time I enjoy <b onclick='music()'>music</b>, fine art, <b onclick='literature()'>literature</b>, photography, swimming and football. I've yet to find something I don't like, apart from a general sense of koyaanisqatsi.</li>";
-		 }
-		</script>
+			<script>
+			 function dream() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li id='intro' class='me only'>What is your dream job?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>What an interesting question. I don't think I've ever given it much thought. But I guess my ideal job would have to combine my various interests: computer programming, philosophy, linguistics, human-computer-interaction and art.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>I think I'd like to have a job where I can learn about myself, and then hopefully use those discoveries to help those in need, so AI comes pretty close. It's a field where we can question our own intelligence, design algorithms to enhance our lives as well as consider methods of interacting with it.</li>";
+			 }
+			</script>
 
-		<script>
-		 function research() {
-			 var table = document.getElementById("myTable");
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<li class='me only'>Could you tell me more about your research?</li>";
-			 scrollSmoothToBottom();
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Certainly. I believe language acquisition will improve training and interpretability of machine learning algorithms. By improving natural language understanding, I hope to one day teach agents using language instead of explicit examples, and ask them to explain their actions.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him'>Specifically, I am fascinated by how we can empirically learn tautological facts. To investigate this, I wish to see whether two-dimensional semantics could be applied to machine learning. This idea states that each word is associated with at least one pair of dimensions. The first dimension in the pair: a sense, maps the word to the second dimension: a reference, a representation of the word formed from experience.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Clearly, everything in philosophy can be solved by adding another layer of misdirection.</li>";
-		 }
-		</script>
+			<script>
+			 function animal() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li id='intro' class='me only'>What is your favourite animal, and why?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Triceratops.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>These well-balanced herbivores are non-agressive, biomass efficient and are adequately equipped to defend themselves against predators. Furthermore, they posess a pentagonal skull when viewed head on, with the topmost vertices protruding into horns. The pentagon has been a favourite mathematical symbol of the ancient Greeks, as the ratio for a side length to a radius length is that of the golden ratio.</li>";
+			 }
+			</script>
 
-		<script>
-		 function undergraduate() {
-			 var table = document.getElementById("myTable");
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<li class='me only'>How was your time at Cambridge?</li>";
-			 scrollSmoothToBottom();
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='profile.png'><li class='him only'>Exquisitely wonderful. I spent three delightful years at <a href='https://www.trin.cam.ac.uk' target='_blank'>Trinity College, Cambridge</a>, where I participated in orchestras, hackathons and coding challenges. In <b onclick='first()'>first year</b>, I studied Physics and Mathematics alongside Computer Science. During my <b onclick='second()'>second year</b>, I won a Trinity College Science Essay Prize. Finally, I graduated with a 2:1 after my <b onclick='third()'>third year</b>, where I investigated Deep Reinforcement Learning for Chess in my <a href='https://github.com/dyth/chessReinforcementLearning/blob/master/dissertation2/diss.pdf' target='_blank'>dissertation</a>.</li>";
-		 }
-		</script>
+			<script>
+			 function three() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li id='intro' class='me only'>How would you describe yourself in three words?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Loves Hemmingway's Iceberg.</li>";
+			 }
+			</script>
 
-		<script>
-		 function first() {
-			 var table = document.getElementById("myTable");
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<li class='me only'>What else did you do during your first year?</li>";
-			 scrollSmoothToBottom();
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='profile.png'><li class='him only'>I participated in eth1, Jane Street's automated trading markets hackathon, where my team came third.</li>";
-		 }
-		</script>
+			<script>
+			 function intro() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li id='intro' class='me only'>What do you do?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I'm an aspiring AI researcher in the field of <u onclick='research()'>language acquisition</u>.";// currently working with <a href='http://www.iro.umontreal.ca/~bengioy/yoshua_en/' target='_blank'>Yoshua Bengio</a> at <a href='https://mila.quebec' target='_blank'>MILA</a>.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>Prior to that, I was an <u onclick='undergraduate()'>undergraduate</u> at <a href='https://www.trin.cam.ac.uk' target='_blank'>Trinity College, Cambridge</a> studying <a href='https://www.cl.cam.ac.uk' target='_blank'>Computer Science</a>.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>I have also been fortunate enough to <u onclick='intern()'>intern</u> at the <u onclick='boeing()'>University of Cambridge</u>, <u onclick='facebook()'>Facebook</u> and <u onclick='tractable()'>Tractable</u>.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>In my spare time I enjoy <u onclick='music()'>music</u>, fine art, <u onclick='literature()'>literature</u>, photography, swimming and football. I've yet to find something I don't like, apart from a general sense of koyaanisqatsi.</li>";
+			 }
+			</script>
 
-		<script>
-		 function second() {
-			 var table = document.getElementById("myTable");
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<li class='me only'>What larks did you get up to in second year?</li>";
-			 scrollSmoothToBottom();
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I assisted and assessed a first-year course, Interaction Design, through viva voce examinations and help sessions. Students were tasked with designing and implementing a weather app with a novel user interface.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him'>I also won the annual Science Essay Prize for 'Descartes and Spinoza in the 21st Century', where I contrasted holism and rationalism with machine learning and GOFAI, eventually arguing the case for a combination of the two.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him'>In addition, I worked with ARM for the <a href='https://github.com/dyth/ARMSurveySwarm' target='_blank'>Second Year Group Project</a>, where my team and I were tasked with programming a robot swarm with Assembly and C++ to map out a floor pattern. I personally worked on calibrating robot software and hardware, developing the mapping algorithm. I also gave a <a href='https://youtu.be/a0Xkke_tMdE' target='_blank'>5 minute research summary</a>, where I present our cost-effective strategy to map floors using four cheap Pololu 3pi robots rather than a single, more expensive robot.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>I don't usually dress like that, as the picture on the left can attest.</li>";
-		 }
-		</script>
+			<script>
+			 function research() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>Could you tell me more about your research?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Certainly. I believe language acquisition will improve training and interpretability of machine learning algorithms. By improving natural language understanding, I hope to one day teach agents using language instead of explicit examples, and ask them to explain their actions.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>Specifically, I am fascinated by how we can empirically learn tautological facts. To investigate this, I wish to see whether two-dimensional semantics could be applied to machine learning. This idea states that each word is associated with at least one pair of dimensions. The first dimension in the pair: a sense, maps the word to the second dimension: a reference, a representation of the word formed from experience.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Clearly, everything in philosophy can be solved by adding another layer of misdirection.</li>";
+			 }
+			</script>
 
-		<script>
-		 function third() {
-			 var table = document.getElementById("myTable");
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<li class='me only'>So how did you find your third and final undergraduate year?</li>";
-			 scrollSmoothToBottom();
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='profile.png'><li class='him only'>The thing I enjoyed most was the opportunity to investigate a topic in my <a href='https://github.com/dyth/chessReinforcementLearning/blob/master/dissertation2/diss.pdf' target='_blank'>dissertation</a>. My topic was 'Deep Reinforcement Learning for Chess', supervised by <a href='https://www.cl.cam.ac.uk/~sbh11/' target='_blank'>Dr. Sean Holden</a>. I trained a chess agent written in Python, C++, Keras and PyTorch using self-play to win > 95 % of games against an opponent playing random moves. Algorithms such as TreeStrap, TD-Leaf and TD-Lambda were implemented.</li>";
-		 }
-		</script>
+			<script>
+			 function undergraduate() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>How was your time at Cambridge?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him only'>Exquisitely wonderful. I spent three delightful years at <a href='https://www.trin.cam.ac.uk' target='_blank'>Trinity College, Cambridge</a>, where I participated in orchestras, hackathons and coding challenges. In <u onclick='first()'>first year</u>, I studied Physics and Mathematics alongside Computer Science. During my <u onclick='second()'>second year</u>, I won a Trinity College Science Essay Prize. Finally, I graduated with a 2:1 after my <u onclick='third()'>third year</u>, where I investigated Deep Reinforcement Learning for Chess in my <a href='https://github.com/dyth/chessReinforcementLearning/blob/master/dissertation2/diss.pdf' target='_blank'>dissertation</a>.</li>";
+			 }
+			</script>
 
-		<script>
-		 function intern() {
-			 var table = document.getElementById("myTable");
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<li class='me only'>How have your internships shaped your thinking?</li>";
-			 scrollSmoothToBottom();
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I was fortunate enough to intern at three contrasting environments, giving me the ability to solve problems from multiple viewpoints.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him'>I've worked as an <b onclick='boeing()'>academic researcher</b> at what was then the Computer Laboratory of the University of Cambridge -- now known as the Faculty of Computer Science and Technology -- as well as an industrial researcher at <b onclick='tractable()'>Tractable</b>.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>I've also worked from both top-down and bottom-up paradigms. At <b onclick='facebook()'>Facebook</b>, I interned as a Data Scientist, where I investigated user-behaviour from a bottom up perspective in order to design a new metric for advertiser quality. Contrastingly, at <b onclick='tractable()'>Tractable</b>, I worked from a top-down perspective, where I improved model performance by identifying the largest source of error and eliminating them first.</li>";
-		 }
-		</script>
+			<script>
+			 function first() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>What else did you do during your first year?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him only'>I participated in eth1, Jane Street's automated trading markets hackathon, where my team came third.</li>";
+			 }
+			</script>
 
-		<script>
-		 function boeing() {
-			 var table = document.getElementById("myTable");
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<li class='me only'>Intern at the Computer Laboratory of the University of Cambridge? What a long title.</li>";
-			 scrollSmoothToBottom();
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I think it was officially 'Undergraduate Researcher'. In any case, I was a UROP student under the supervision of <a href='https://www.cl.cam.ac.uk/~afb21/' target='_blank'>Prof. Alan Blackwell</a>, funded by Boeing Defence. I investigated novel methods for human-in-the-loop analysts to interact with multiple videos.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>This culminated in the invention of a video-morphing transformation enabling an analyst to keep an object in focus between two video streams, using OpenCV and scikit-learn. This transform was incorporated within Boeing's analysis stack after many long nights liaising with a software-development team at their Bristol offices.</li>";
-		 }
-		</script>
+			<script>
+			 function second() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>What larks did you get up to in second year?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I assisted and assessed a first-year course, Interaction Design, through viva voce examinations and help sessions. Students were tasked with designing and implementing a weather app with a novel user interface.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>I also won the annual Science Essay Prize for 'Descartes and Spinoza in the 21st Century', where I contrasted holism and rationalism with machine learning and GOFAI, eventually arguing the case for a combination of the two.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>In addition, I worked with ARM for the <a href='https://github.com/dyth/ARMSurveySwarm' target='_blank'>Second Year Group Project</a>, where my team and I were tasked with programming a robot swarm with Assembly and C++ to map out a floor pattern. I personally worked on calibrating robot software and hardware, developing the mapping algorithm. I also gave a <a href='https://youtu.be/a0Xkke_tMdE' target='_blank'>5 minute research summary</a>, where I present our cost-effective strategy to map floors using four cheap Pololu 3pi robots rather than a single, more expensive robot.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>I don't usually dress like that, as the picture on the left can attest.</li>";
+			 }
+			</script>
 
-		<script>
-		 function facebook() {
-			 var table = document.getElementById("myTable");
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<li class='me only'>Was your time at Facebook filled with likes? Or angery reaccts only?</li>";
-			 scrollSmoothToBottom();
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him start'>It was very fun, not least because of all the free food. I worked at the London offices within the <a href='https://www.facebook.com/business/news/audience-network' target='_blank'>Audience Network</a> team, responsible for matching an advertisement with a user. There, I analysed the effect of advertisements on user behaviour, producing pipelines and databases using Python and SQL, handling ~5 TB of data daily, multiple languages, countries and 2 billion users.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him'>Eventually, I produced a novel metric of advertiser quality from raw user data. This improved revenue estimating, fraud detection and advertisement prioritisation in Audience Network, an Ad Network platform.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Finally, I presented my findings to managers, data engineers and other data scientists in an hour-long session.</li>";
-		 }
-		</script>
+			<script>
+			 function third() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>So how did you find your third and final undergraduate year?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him only'>The thing I enjoyed most was the opportunity to investigate a topic in my <a href='https://github.com/dyth/chessReinforcementLearning/blob/master/dissertation2/diss.pdf' target='_blank'>dissertation</a>. My topic was 'Deep Reinforcement Learning for Chess', supervised by <a href='https://www.cl.cam.ac.uk/~sbh11/' target='_blank'>Dr. Sean Holden</a>. I trained a chess agent written in Python, C++, Keras and PyTorch using self-play to win > 95 % of games against an opponent playing random moves. Algorithms such as TreeStrap, TD-Leaf and TD-Lambda were implemented.</li>";
+			 }
+			</script>
 
-		<script>
-		 function tractable() {
-			 var table = document.getElementById("myTable");
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<li class='me only'>Could you tell me more about the start-up culture at Tractable?</li>";
-			 scrollSmoothToBottom();
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Let me sum it up in one word: Interesting.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him'><a href='https://www.tractable.ai' target='_blank'>Tractable</a> are a fast-growing startup in the automated automobile insurance sector. I enjoyed working there so much that I signed a new contract to work there for three more months after my initial twelve weeks were over. I worked as a Deep Learning Research Intern, focussing on three main projects using Python, Keras and TensorFlow.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him'>First, I investigated how car-part and damage classifiers could be improved by considering information from surrounding parts. Car-part classifiers detected whether a photograph contained a car part such as a bootlid, whereas damage classifiers assessed their reparability. My improvement decreased the frequency of unexplainable errors by up to 98 %, improving the interpretability of models for customers and clients.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him'>In my second project, I led Tractable's research effort in an RFP (Request For Proposal competition) from Talanx, one of the largest insurers in Europe. The competition assessed a company's capability of automated car insurance. This required me to train models which could detect damage on 59 car parts, 39 more parts than what Tractable had been assessing. Ultimately, we won the RFP with almost 3x higher accuracy than the closest opponent.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Finally, I helped upgrade Tractable's codebase to TensorFlow 1.11 from Keras 1.2.2.. I converted a ResNet-37 implementation to use the new library, checking that all the layers, connections and weights were loaded correctly.</li>";
-		 }
-		</script>
+			<script>
+			 function intern() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>How have your internships shaped your thinking?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I was fortunate enough to intern at three contrasting environments, giving me the ability to solve problems from multiple viewpoints.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>I've worked as an <u onclick='boeing()'>academic researcher</u> at what was then the Computer Laboratory of the University of Cambridge -- now known as the Faculty of Computer Science and Technology -- as well as an industrial researcher at <u onclick='tractable()'>Tractable</u>.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>I've also worked from both top-down and bottom-up paradigms. At <u onclick='facebook()'>Facebook</u>, I interned as a Data Scientist, where I investigated user-behaviour from a bottom up perspective in order to design a new metric for advertiser quality. Contrastingly, at <u onclick='tractable()'>Tractable</u>, I worked from a top-down perspective, where I improved model performance by identifying the largest source of error and eliminating them first.</li>";
+			 }
+			</script>
 
-		<script>
-		 function music() {
-			 var table = document.getElementById("myTable");
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<li class='me only'>If music be the food of love, play on?</li>";
-			 scrollSmoothToBottom();
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Absolutely. If love be the music of food, eat on. I am fortunate to have a diploma in Piano Performance from ABRSM and a Grade VIII Distinction in Violin. I believe that music, literature and computer programming are languages of varying complexity, ideal for conveying ideas, emotions and beauty.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him'>Some of my favourite artists are Dvorak, Beethoven and One Direction. I also enjoy listening to Max Richter, Taylor Swift, Richard Strauss and Fanny Mendelssohn, as well as bit of Hubert Parry, McFly and Dire Straits on the side.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Strauss' opera Der Rosenkavalier will always have a special place in my heart, as it was the composition I was listening to when I first learned about and trained a neural network.</li>";
-		 }
-		</script>
+			<script>
+			 function boeing() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>Intern at the Computer Laboratory of the University of Cambridge? What a long title.</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I think it was officially 'Undergraduate Researcher'. In any case, I was a UROP student under the supervision of <a href='https://www.cl.cam.ac.uk/~afb21/' target='_blank'>Prof. Alan Blackwell</a>, funded by Boeing Defence. I investigated novel methods for human-in-the-loop analysts to interact with multiple videos.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>This culminated in the invention of a video-morphing transformation enabling an analyst to keep an object in focus between two video streams, using OpenCV and scikit-learn. This transform was incorporated within Boeing's analysis stack after many long nights liaising with a software-development team at their Bristol offices.</li>";
+			 }
+			</script>
 
-		<script>
-		 function literature() {
-			 var table = document.getElementById("myTable");
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<li class='me only'>You're written a website solely based on the intertextuality of dialogue, you're clearly a postmodernist when it comes to literature?</li>";
-			 scrollSmoothToBottom();
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Aren't you a fan of big fancy words? Despite one of my favourite writers being Nabokov, I wouldn't say that I'm ironic enough to be a postmodernist.</li>";
-			 var row = table.insertRow(-1);
-			 var cell1 = row.insertCell(0);
-			 cell1.innerHTML = "<img src='profile.png'><li class='him end'>I've anonymously published several short stories online, which is left as a challenge for you to find. Most of them happen to be about AI and postmodernism (ironically).</li>";
-		 }
-		</script>
+			<script>
+			 function facebook() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>Was your time at Facebook filled with likes? Or angery reaccts only?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>It was very fun, not least because of all the free food. I worked at the London offices within the <a href='https://www.facebook.com/business/news/audience-network' target='_blank'>Audience Network</a> team, responsible for matching an advertisement with a user. There, I analysed the effect of advertisements on user behaviour, producing pipelines and databases using Python and SQL, handling ~5 TB of data daily, multiple languages, countries and 2 billion users.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>Eventually, I produced a novel metric of advertiser quality from raw user data. This improved revenue estimating, fraud detection and advertisement prioritisation in Audience Network, an Ad Network platform.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Finally, I presented my findings to managers, data engineers and other data scientists in an hour-long session.</li>";
+			 }
+			</script>
 
-		<script>
-		 scrollingElement = (document.scrollingElement || document.body)
-		 function scrollSmoothToBottom (id) {
-			 $(scrollingElement).animate({
-				 scrollTop: document.body.scrollHeight
-			 }, 500);
-		 }
-		</script>
+			<script>
+			 function tractable() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>Could you tell me more about the start-up culture at Tractable?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Let me sum it up in one word: Interesting.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'><a href='https://www.tractable.ai' target='_blank'>Tractable</a> are a fast-growing startup in the automated automobile insurance sector. I enjoyed working there so much that I signed a new contract to work there for three more months after my initial twelve weeks were over. I worked as a Deep Learning Research Intern, focussing on three main projects using Python, Keras and TensorFlow.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>First, I investigated how car-part and damage classifiers could be improved by considering information from surrounding parts. Car-part classifiers detected whether a photograph contained a car part such as a bootlid, whereas damage classifiers assessed their reparability. My improvement decreased the frequency of unexplainable errors by up to 98 %, improving the interpretability of models for customers and clients.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>In my second project, I led Tractable's research effort in an RFP (Request For Proposal competition) from Talanx, one of the largest insurers in Europe. The competition assessed a company's capability of automated car insurance. This required me to train models which could detect damage on 59 car parts, 39 more parts than what Tractable had been assessing. Ultimately, we won the RFP with almost 3x higher accuracy than the closest opponent.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Finally, I helped upgrade Tractable's codebase to TensorFlow 1.11 from Keras 1.2.2.. I converted a ResNet-37 implementation to use the new library, checking that all the layers, connections and weights were loaded correctly.</li>";
+			 }
+			</script>
+
+			<script>
+			 function music() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>If music be the food of love, play on?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Absolutely. If love be the music of food, eat on.</li>"
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>I am fortunate to have a diploma in Piano Performance from ABRSM and a Grade VIII Distinction in Violin. In a previous life, I conducted and composed music for my local youth orchestra (Worcestershire), after nearly a decade of playing there as a young violinist. Now, I believe that music, literature and computer programming are languages of varying complexity, ideal for conveying ideas, emotions and beauty.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>Some of my favourite artists are Beethoven, One Direction and Dvorak. I also enjoy listening to Max Richter, Taylor Swift, Richard Strauss and Fanny Mendelssohn, as well as bit of Hubert Parry, McFly and Dire Straits on the side.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>The 1995 Kleiber recording of Strauss' opera Der Rosenkavalier will always have a special place in my heart, as it was what I was listening to when I first learned about and trained a neural network.</li>";
+			 }
+			</script>
+
+			<script>
+			 function literature() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>You're written a website solely based on the intertextuality of dialogue, you're clearly a postmodernist when it comes to literature?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Aren't you a fan of big fancy words? Despite one of my favourite writers being Nabokov, I wouldn't say that I'm ironic enough to be a postmodernist.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>I've anonymously published several short stories online, which is left as a challenge for you to find. Most of them happen to be about AI and postmodernism (ironically).</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Of course, I love writing. Stay tuned for more (anonymous) content.</li>";
+			 }
+			</script>
+
+			<script>
+			 scrollingElement = (document.scrollingElement || document.body)
+			 function scrollSmoothToBottom (id) {
+				 $(scrollingElement).animate({
+					 scrollTop: document.body.scrollHeight
+				 }, 500);
+			 }
+			</script>
 
 	</body>
 </html>
