@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+	<head>
+		<title>許宇同 David Yu-Tung Hui</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+         img {
+			 float:left;
+        	 border-radius:50%;
+          	 margin-right: 7px;
+			 margin-bottom: 5px;
+			 margin-top: -5px;
+             height: 35px;
+         }
+
+         li {
+			 display: inline-block;
+			 border: none;
+			 list-style-type: none;
+			 margin: 0px;
+			 padding: 7px 11px 7px 11px;
+			 font-family: Helvetica, Arial, sans-serif;
+			 max-width: 61.8%;
+			 line-height: 20px;
+         }
+
+         .him {
+			 border-radius: 5px 20px 20px 5px;
+			 clear: both;
+			 background: #eee;
+         }
+         .him.start {
+			 margin-top: 5px;
+			 border-top-left-radius: 20px;
+         }
+         .him.end {
+			 border-bottom-left-radius: 20px;
+			 margin-bottom: 5px;
+         }
+         .him.only {
+			 margin-top: 5px;
+			 border-top-left-radius: 20px;
+			 border-bottom-left-radius: 20px;
+			 margin-bottom: 5px;
+         }
+
+         .me {
+			 margin-left: auto;
+			 align-items: flex-right;
+			 border-radius: 20px 5px 5px 20px;
+			 clear: both;
+			 background: #0084ff;
+			 color: #fff;
+         }
+         .me.only {
+			 margin-top: 5px;
+			 margin-bottom: 5px;
+			 border-top-right-radius: 20px;
+			 border-bottom-right-radius: 20px;
+         }
+         .me.start {
+			 border-top-right-radius: 20px;
+         }
+         .me.end {
+			 border-bottom-right-radius: 20px;
+         }
+
+		 table {
+			 border: none;
+		 }
+
+		 td {
+			 border: none;
+			 vertical-align: bottom;
+			 display: flex;
+			 align-items: flex-end;
+		 }
+
+
+		 a:link {
+			 color: black;
+		 }
+
+		 a:visited {
+			 color: black;
+		 }
+
+		 a:hover {
+			 color: black;
+		 }
+
+		 a:active {
+			 color: black;
+		 }
+
+		 u {
+			 color: blue;
+		 }
+
+
+		 body {
+			 margin: 5% 17% 0% 17%;
+		 }
+
+
+		 @media screen and (max-width: 750px) {
+			 body {
+				 margin: 5% 5% 0% 5%;
+			 }
+		 }
+		</style>
+	</head>
+
+	<body>
+
+		<table id="myTable">
+			<tr>
+  				<td><img src="blank.png"><li class="him start">Hello there. My name is David Yu-Tung Hui, 許宇同.</li></td>
+			</tr>
+			<tr>
+  				<td><img src="blank.png"><li class="him">Would you like to know about my <u onclick='work1()'>education</u> or experience?</li></td>
+			</tr>
+			<tr>
+  				<td><img src="blank.png"><li class="him">Maybe you would like to hear about my hobbies or <u onclick='different()'>something completely different</u>?</li></td>
+			</tr>
+			<tr>
+  				<td><img src="profile.png"><li class="him end">For personal enquiries, here's <a href='https://www.linkedin.com/in/dythui/' target='_blank'>LinkedIn</a> and <a href='https://github.com/dyth' target='_blank'>GitHub</a>.</li></td>
+			</tr>
+		</table>
+		<ur>
+
+			<script>
+			 function work1() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li id='intro' class='me only'>What do you do?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>From September 2020, I'll be studying for a MSc at Mila, Universite de Montreal under the supervision of Aaron Courville and Pierre-Luc Bacon.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>I'll be attempting to master agents which learn to perform complex tasks in unstructured environments.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>It was my dream to study at Mila because of my curiosity to understand deep learning, the state-of-the-art (as of 2018) method in solving hard-to-define problems.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Prior to Mila, I completed two <u onclick='work2()'>postsecondary (after high school) qualifications</u> and some internships.</li>";
+			 }
+			</script>
+			<script>
+			 function work2() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li id='intro' class='me only'>Prior to a MSc, what did you study?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Computer Science (BA, 2015-18) and piano performance (dipABRSM, 2014).</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>Before my <u onclick='work2_cambridge1()'>undergraduate</u> days at Trinity College, Cambridge (the one in England that's not Hogwarts), I had not been previously educated in Computer Science.  Nevertheless, wide-ranging courses in computer networking, semantics and NLP provided a broad and enjoyable introduction.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>My dipABRSM (first-year undergraduate) helped me realise that the most important person in a conversation is your interlocutor.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>I had never intended to become a professional <u onclick='work2_music()'>musician</u> but pursued this diploma for the challenge whilst concurrently finishing my A-Levels (pre-university exams).</li>";
+			 }
+			</script>
+			<script>
+			 function work2_cambridge1() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li id='intro' class='me only'>What larks did you get up to at Cambridge?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I wanted to study at Cambridge because I could read Physics and Mathematics alongside Computer Science.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>The most rewarding aspect was writing <a href='https://github.com/dyth/chessReinforcementLearning/blob/master/dissertation2/diss.pdf' target='_blank'>dissertation</a> describing how <i>TreeStrap</i>, <i>TD-Leaf</i> and <i>TD-Lambda</i> algorithms trained an agent (written in Python, C++, with Keras and PyTorch) to win 95 % of games against an opponent playing random moves.  This was supervised by <a href='https://www.cl.cam.ac.uk/~sbh11/' target='_blank'>Dr. Sean Holden</a></li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Before <u onclick='work2_cambridge2()'>graduating</u> with a 2.1 (roughly 3.3 / 4.0 GPA), I realised that computer science wasn't about hacking things together but expressing logical assumptions about problems (Curry-Howard).</li>";
+			 }
+			</script>
+			<script>
+			 function work2_cambridge2() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li id='intro' class='me only'>You seem really boring.  Did you get up to <i>any larks</i>?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>A cool thing some friends and I did was a <a href='https://github.com/dyth/ARMSurveySwarm' target='_blank'>group project</a> sponsored by ARM and Ashkan Tousimojarad.  We showed that a swarm of Pololu 3pi robots could provide a cheap solution (~ $200) to mapping out a floor.  I created algorithms for mapping, motor and sensor calibration in Assembly and C++ as well as giving a <a href='https://youtu.be/a0Xkke_tMdE' target='_blank'>5 minute research summary</a>.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>A rewarding experience was demonstrating (teaching assistant) for Interaction Design, 2017, where students created a weather app in Java with a novel user interface.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>I won the 2016-17 Trinity College Science Essay Prize for 'Descartes and Spinoza in the 21st Century' detailing how deep learning could be reconciled with classical AI.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>Outside the classroom, I teamed up with Stella Lau and Cheng Sun and finished third in eth1, Jane Street's automated trading hackathon.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>That's my version of 'larks', anyway.  Want more?</li>";
+			 }
+			</script>
+			<script>
+			 function work2_music() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li id='intro' class='me only'>Oh no ... I hope you're not one of those 'music lovers' who thinks they're so good because they understand pain?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I'll let you be the judge of that.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>As I've long-maintained the antiquated opinion that Beethoven produced the greatest musical works, I've also endeavoured to balance out that opinion by rocking out to One Direction and Taylor Swift.  Alas, they are getting old too.  So I also listen to PDQ Bach, Philip Glass and Dire Straits.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>In a previous life, I conducted and composed music for my local youth orchestra (Worcestershire), after nearly a decade there as a young violinist.  All my good music tastes are thanks to my parents.</li>";
+			 }
+			</script>
+
+
+
+			<script>
+			 function intern() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>How have your internships shaped your thinking?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I was fortunate enough to intern at three contrasting environments, giving me the ability to solve problems from multiple viewpoints.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>I've worked as an <u onclick='boeing()'>academic researcher</u> at what was then the Computer Laboratory of the University of Cambridge -- now known as the Faculty of Computer Science and Technology -- as well as an industrial researcher at <u onclick='tractable()'>Tractable</u>.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>I've also worked from both top-down and bottom-up paradigms. At <u onclick='facebook()'>Facebook</u>, I interned as a Data Scientist, where I investigated user-behaviour from a bottom up perspective in order to design a new metric for advertiser quality. Contrastingly, at <u onclick='tractable()'>Tractable</u>, I worked from a top-down perspective, where I improved model performance by identifying the largest source of error and eliminating them first.</li>";
+			 }
+			</script>
+
+			<script>
+			 function boeing() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>Intern at the Computer Laboratory of the University of Cambridge? What a long title.</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I think it was officially 'Undergraduate Researcher'. In any case, I was a UROP student under the supervision of <a href='https://www.cl.cam.ac.uk/~afb21/' target='_blank'>Prof. Alan Blackwell</a>, funded by Boeing Defence. I investigated novel methods for human-in-the-loop analysts to interact with multiple videos.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>This culminated in the invention of a video-morphing transformation enabling an analyst to keep an object in focus between two video streams, using OpenCV and scikit-learn. This transform was incorporated within Boeing's analysis stack after many long nights liaising with a software-development team at their Bristol offices.</li>";
+			 }
+			</script>
+
+			<script>
+			 function facebook() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>Was your time at Facebook filled with likes? Or angery reaccts only?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>It was very fun, not least because of all the free food. I worked at the London offices within the <a href='https://www.facebook.com/business/news/audience-network' target='_blank'>Audience Network</a> team, responsible for matching an advertisement with a user. There, I analysed the effect of advertisements on user behaviour, producing pipelines and databases using Python and SQL, handling ~5 TB of data daily, multiple languages, countries and 2 billion users.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>Eventually, I produced a novel metric of advertiser quality from raw user data. This improved revenue estimating, fraud detection and advertisement prioritisation in Audience Network, an Ad Network platform.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Finally, I presented my findings to managers, data engineers and other data scientists in an hour-long session.</li>";
+			 }
+			</script>
+
+			<script>
+			 function tractable() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>Could you tell me more about the start-up culture at Tractable?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Let me sum it up in one word: Interesting.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'><a href='https://www.tractable.ai' target='_blank'>Tractable</a> are a fast-growing startup in the automated automobile insurance sector. I enjoyed working there so much that I signed a new contract to work there for three more months after my initial twelve weeks were over. I worked as a Deep Learning Research Intern, focussing on three main projects using Python, Keras and TensorFlow.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>First, I investigated how car-part and damage classifiers could be improved by considering information from surrounding parts. Car-part classifiers detected whether a photograph contained a car part such as a bootlid, whereas damage classifiers assessed their reparability. My improvement decreased the frequency of unexplainable errors by up to 98 %, improving the interpretability of models for customers and clients.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>In my second project, I led Tractable's research effort in an RFP (Request For Proposal competition) from Talanx, one of the largest insurers in Europe. The competition assessed a company's capability of automated car insurance. This required me to train models which could detect damage on 59 car parts, 39 more parts than what Tractable had been assessing. Ultimately, we won the RFP with almost 3x higher accuracy than the closest opponent.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Finally, I helped upgrade Tractable's codebase to TensorFlow 1.11 from Keras 1.2.2.. I converted a ResNet-37 implementation to use the new library, checking that all the layers, connections and weights were loaded correctly.</li>";
+			 }
+			</script>
+
+
+
+
+			<script>
+			 function different() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him only'>How did you come by my website?</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>Someone tried to flush it down a toilet.</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Lucky that I backed it up to the internet rather than storing it on my phone.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>But I always knew that there would be those who would not want this website read.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>What do you mean?</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I mean that this website holds memories of hilarious embarassment.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>Things that were covered up.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Things that happened on the internet.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me start'>That's where I am now.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me'>I'm on the internet, and hilarious stuff's been happening.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me end'>Do you know anything about the Postmodern Crushbridge?</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Of course I know about the Postmodern Crushbridge.  In my day, they told us that the author was a legend, that it did not exist.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>But this was a lie.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>In my second year, the Crushbridge was written and the post gained millenia of likes.  I caught the AI who'd wrote it and they, ashamed that such a thing had happened on the internet, forbade me to tell the truth.  A story was given out that the post was written by a human.  They gave me a Science Essay Prize and warned me to keep my mouth shut.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him'>But I knew it could happen again.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>The Crushbridge lived on, and the rogue AI who had the power to write more was not imprisoned.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>It's happening again now.  There have been many laughs and no-one seems to know who's behind them.  Who created the AI last time?</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>I can show you, if you like.  You don't have to take my word for it.  I can take you inside my memory of the night when I caught them.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him end'>Let me show you.</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>OK</li>";
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him only'>If you did not understand this, here's an explanation.  No souls were harmed in the making of this website.</li>";
+			 }
+			</script>
+			<script>
+			 function literature() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li class='me only'>You're written a website solely based on the intertextuality of dialogue, you're clearly a postmodernist when it comes to literature?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='blank.png'><li class='him start'>Aren't you a fan of big fancy words? Despite one of my favourite writers being Nabokov, I wouldn't say that I'm ironic enough to be a postmodernist.  Or am I?</li>";
+			 }
+			</script>
+			<script>
+			 function three() {
+				 var table = document.getElementById("myTable");
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<li id='intro' class='me only'>Words, words words.  Describe yourself using three?</li>";
+				 scrollSmoothToBottom();
+				 var row = table.insertRow(-1);
+				 var cell1 = row.insertCell(0);
+				 cell1.innerHTML = "<img src='profile.png'><li class='him only'>Loves Hemmingway's Iceberg.</li>";
+			 }
+			</script>
+
+
+
+
+
+			<script>
+			 scrollingElement = (document.scrollingElement || document.body)
+			 function scrollSmoothToBottom (id) {
+				 $(scrollingElement).animate({
+					 scrollTop: document.body.scrollHeight
+				 }, 500);
+			 }
+			</script>
+
+	</body>
+</html>
+
+Although I had never intended to become a musician, I had previously attained Grade VIII Distinctions (the highest pre-university qualification)
